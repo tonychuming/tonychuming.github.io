@@ -777,6 +777,19 @@ h3 { font-size: 1.25rem; font-weight: 600; }
     margin-bottom: 6px;
 }
 
+.exp-department {
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+
+.exp-department i {
+    color: var(--color-accent);
+    margin-right: 6px;
+    width: 14px;
+    text-align: center;
+}
+
 .exp-project {
     font-size: 0.92rem;
     color: var(--color-text);

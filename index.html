@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lin Chuming - MSc Computer Control & Automation at NTU Singapore. Machine Learning researcher specializing in applied ML for biomedical sensing, computer vision, and NLP.">
+    <meta name="keywords" content="Lin Chuming, Machine Learning, NTU Singapore, Computer Vision, NLP, Data Engineering, Software Engineer, Research">
+    <meta name="author" content="Lin Chuming">
+    <meta property="og:title" content="Lin Chuming | ML Researcher & Software Engineer">
+    <meta property="og:description" content="MSc candidate at NTU Singapore bridging software engineering with applied machine learning across biomedical sensing, food science, and plant biology.">
+    <meta property="og:type" content="website">
+    <title>Lin Chuming | ML Researcher &amp; Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">LC</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting fade-in">Hello, I am</p>
+                <h1 class="hero-name fade-in delay-1">Lin Chuming</h1>
+                <p class="hero-title fade-in delay-2">ML Researcher &amp; Software Engineer</p>
+                <p class="hero-subtitle fade-in delay-3">MSc candidate at Nanyang Technological University, applying machine learning to real-world challenges in biomedical sensing, computer vision, and natural language processing.</p>
+                <div class="hero-cta fade-in delay-4">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-quick-info fade-in delay-4">
+                    <span class="quick-info-item">
+                        <i class="fas fa-map-marker-alt"></i> Singapore
+                    </span>
+                    <span class="quick-info-item">
+                        <i class="fas fa-graduation-cap"></i> NTU Singapore
+                    </span>
+                    <span class="quick-info-item">
+                        <i class="fas fa-flask"></i> Applied ML Research
+                    </span>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-2">
+                <div class="hero-avatar">
+                    <img src="assets/images/profile.jpg" alt="Lin Chuming - Professional headshot" class="avatar-photo">
+                    <div class="avatar-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p class="about-lead">I am a cross-disciplinary researcher who turns complex scientific problems into structured machine learning solutions.</p>
+                    <p>Currently pursuing my MSc in Computer Control &amp; Automation at Nanyang Technological University, I bring a strong foundation in software engineering (First Class Honours, GPA 3.83/4.00) and hands-on research experience spanning biomedical impedance sensing, computer vision for agricultural quality assessment, and natural language processing for sensory analysis.</p>
+                    <p>My work is defined by a consistent methodology: identify a domain problem, design rigorous experiments, and build end-to-end ML pipelines that produce actionable results. Whether analyzing bioelectrical impedance signals on microfluidic biochips or predicting coffee sensory scores from review text, I bring the same disciplined, data-driven approach to every project.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-microscope"></i></div>
+                        <h3>5</h3>
+                        <p>Research Projects</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-university"></i></div>
+                        <h3>3</h3>
+                        <p>Research Institutions</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+                        <h3>4</h3>
+                        <p>ML Domains</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-award"></i></div>
+                        <h3>3.83</h3>
+                        <p>GPA (First Class)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Nanyang Technological University</h3>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Singapore</span>
+                        </div>
+                        <p class="timeline-degree">Master of Science &mdash; Computer Control &amp; Automation</p>
+                        <span class="timeline-date">Aug 2025 &ndash; Present</span>
+                        <div class="timeline-badge active-badge">Currently Enrolled</div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Mae Fah Luang University</h3>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Thailand</span>
+                        </div>
+                        <p class="timeline-degree">Bachelor of Engineering &mdash; Software Engineering</p>
+                        <span class="timeline-date">Aug 2021 &ndash; May 2025</span>
+                        <ul class="timeline-details">
+                            <li><strong>GPA: 3.83 / 4.00</strong> &mdash; First Class Honours</li>
+                            <li>MFU Partial Scholarship for Outstanding Academic Performance (AY 2023/2024)</li>
+                        </ul>
+                        <a href="assets/docs/scholarship.pdf" target="_blank" rel="noopener noreferrer" class="credential-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>View Scholarship Certificate</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Professional Experience</h2>
+            <div class="experience-card reveal">
+                <div class="exp-header">
+                    <div class="exp-title-group">
+                        <h3>Research Assistant Intern</h3>
+                        <p class="exp-company">National Electronics and Computer Technology Center (NECTEC), NSTDA</p>
+                        <p class="exp-project"><i class="fas fa-project-diagram"></i> Multi-Task Learning and Interpretability for Coffee Sensory Score Prediction from Reviews</p>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-date"><i class="fas fa-calendar-alt"></i> Jan 2025 &ndash; May 2025</span>
+                        <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Thailand</span>
+                    </div>
+                </div>
+                <div class="exp-supervisors">
+                    <span><i class="fas fa-user-tie"></i> Supervisor: Mr. Ridnarong Promya</span>
+                    <span><i class="fas fa-chalkboard-teacher"></i> Academic Advisor: Dr. Prasarn Jakkaew (MFU)</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Curated a proprietary dataset of <strong>8,300+ coffee reviews</strong> with multi-dimensional sensory scores; designed masked loss strategies to handle sparse and missing multi-target labels in unstructured text data</li>
+                    <li>Engineered a <strong>Multi-Task Learning framework</strong> using BERT for semantic feature extraction, simultaneously predicting <strong>5 sensory dimensions</strong> (Aroma, Acidity, Body, Flavor, Aftertaste) from review text</li>
+                    <li>Conducted rigorous comparative analysis between deep learning (BERT) and statistical baselines (TF-IDF + Ridge Regression); demonstrated practical model selection insights for high-dimensional sparse data</li>
+                    <li>Collaborated <strong>cross-institutionally</strong> with NECTEC/BIOTEC researchers under joint academic-industry supervision</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="tag">BERT</span>
+                    <span class="tag">Multi-Task Learning</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">TF-IDF</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">pandas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Research &amp; Projects</h2>
+            <p class="section-subtitle reveal">A portfolio spanning biomedical sensing, computer vision, NLP, and data engineering &mdash; each project reflecting my commitment to rigorous methodology and real-world impact.</p>
+
+            <!-- Project 1: NTU Dissertation -->
+            <div class="project-card featured reveal">
+                <div class="project-status-bar">
+                    <span class="project-status ongoing"><i class="fas fa-circle-notch fa-spin"></i> Active Research</span>
+                    <span class="project-type"><i class="fas fa-scroll"></i> MSc Dissertation</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-info">
+                        <h3 class="project-title">ML/AI for Bio-EIS Signal Analysis for Cultured Meat Monitoring</h3>
+                        <div class="project-affiliation">
+                            <span><i class="fas fa-university"></i> Nanyang Technological University</span>
+                            <span><i class="fas fa-calendar-alt"></i> Aug 2025 &ndash; Present</span>
+                        </div>
+                        <p class="project-supervisor"><i class="fas fa-user-tie"></i> Supervisor: Assoc. Prof. Poenar Daniel Puiu</p>
+                        <p class="project-description">Leading the development of a machine learning pipeline for bioelectrical impedance analysis on a microfluidic biochip platform, targeting automated classification and concentration estimation of microbead materials for cultured meat monitoring applications.</p>
+                        <ul class="project-highlights">
+                            <li>Designing and executing a structured EIS data acquisition protocol across <strong>multiple microbead materials</strong> at <strong>3 concentration levels</strong>, building a statistically robust dataset for downstream ML model training</li>
+                            <li>Performing <strong>Bode and Nyquist plot analysis</strong> to extract physically interpretable features; constructing <strong>Equivalent Circuit Models</strong> to validate alignment between theoretical physics constraints and real-world impedance measurements</li>
+                            <li>Developing the ML pipeline targeting <strong>bead-type classification</strong>, <strong>concentration estimation</strong>, and <strong>mixture composition inference</strong>, with planned integration of <strong>physics-informed constraints</strong> via Maxwell-Hanai mixture theory</li>
+                            <li>Conducting rigorous <strong>statistical reproducibility analysis</strong> across 6 biochips (18 measurements), evaluating intra-chip and inter-chip variability using coefficient of variation metrics</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">EIS Analysis</span>
+                            <span class="tag">Signal Processing</span>
+                            <span class="tag">Physics-Informed ML</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Coffee Bean Classification -->
+            <div class="project-card reveal">
+                <div class="project-status-bar">
+                    <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    <span class="project-type"><i class="fas fa-flask"></i> Research Lab Project</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-info">
+                        <h3 class="project-title">Comparative Study on Coffee Bean Quality Classification</h3>
+                        <div class="project-affiliation">
+                            <span><i class="fas fa-university"></i> Mae Fah Luang University &mdash; IATE Lab</span>
+                            <span><i class="fas fa-calendar-alt"></i> Sep 2023 &ndash; Nov 2024</span>
+                        </div>
+                        <p class="project-supervisor"><i class="fas fa-user-tie"></i> Supervisor: Asst. Prof. Dr. Sujitra Arwatchananukul</p>
+                        <p class="project-description">Conducted a comprehensive comparative study between traditional hand-crafted features and deep learning approaches for automated coffee bean defect detection, establishing a rigorous benchmark across multiple processing methods and roast levels.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">5,600</span>
+                                <span class="metric-label">Images Collected</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">97.13%</span>
+                                <span class="metric-label">Top Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">9</span>
+                                <span class="metric-label">Class Conditions</span>
+                            </div>
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Engineered a proprietary dataset of <strong>5,600 images</strong> under strictly controlled lab conditions; simulated real-world variance across <strong>3 processing methods x 3 roast levels</strong></li>
+                            <li>Implemented baseline defect detection with hand-crafted features (Random Forest, SVM, KNN) achieving <strong>95.97% accuracy</strong>, validating traditional texture and shape descriptors</li>
+                            <li>Benchmarked multiple CNN architectures; <strong>ResNet50d achieved 97.13% top accuracy</strong>, demonstrating the superiority of learned features for complex grain texture classification</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">timm</span>
+                            <span class="tag">ResNet50d</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Image Classification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Mimosa pudica -->
+            <div class="project-card reveal">
+                <div class="project-status-bar">
+                    <span class="project-status ongoing"><i class="fas fa-circle-notch fa-spin"></i> Active Research</span>
+                    <span class="project-type"><i class="fas fa-leaf"></i> Research Project</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-info">
+                        <h3 class="project-title">Investigating Reaction Dynamics in <em>Mimosa pudica</em></h3>
+                        <div class="project-affiliation">
+                            <span><i class="fas fa-university"></i> Nanyang Technological University</span>
+                            <span><i class="fas fa-calendar-alt"></i> Aug 2025 &ndash; Present</span>
+                        </div>
+                        <p class="project-supervisor"><i class="fas fa-user-tie"></i> Supervisor: Prof. Li Hua</p>
+                        <p class="project-description">Designing and implementing an automated computer vision pipeline to quantify plant kinematic responses under controlled environmental stress conditions, building a comprehensive reaction dynamics dataset for the sensitive plant <em>Mimosa pudica</em>.</p>
+                        <ul class="project-highlights">
+                            <li>Designed a standardized high-precision experimental protocol to capture plant kinematic data under <strong>6 environmental variables</strong> &mdash; pH, NaCl stress, and light gradients</li>
+                            <li>Utilizing <strong>high-speed imaging at 60 fps</strong> to build a robust reaction dynamics dataset with statistically meaningful sample sizes</li>
+                            <li>Implementing an automated CV pipeline using <strong>Fiji macros and Python (OpenCV)</strong> to extract angular velocities and physiological fatigue metrics</li>
+                            <li>Ensuring <strong>statistical reproducibility</strong> across all experimental conditions through standardized protocols and automated measurement extraction</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Fiji/ImageJ</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">High-Speed Imaging</span>
+                            <span class="tag">Experimental Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: NECTEC NLP -->
+            <div class="project-card reveal">
+                <div class="project-status-bar">
+                    <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    <span class="project-type"><i class="fas fa-building"></i> Industry Internship</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-info">
+                        <h3 class="project-title">Multi-Task Learning for Coffee Sensory Score Prediction from Reviews</h3>
+                        <div class="project-affiliation">
+                            <span><i class="fas fa-building"></i> NECTEC, NSTDA (National Research Agency)</span>
+                            <span><i class="fas fa-calendar-alt"></i> Jan 2025 &ndash; May 2025</span>
+                        </div>
+                        <p class="project-supervisor"><i class="fas fa-user-tie"></i> Supervisor: Mr. Ridnarong Promya | Advisor: Dr. Prasarn Jakkaew</p>
+                        <p class="project-description">Developed a multi-task deep learning framework to predict five coffee sensory dimensions simultaneously from review text, under joint supervision between a national research center and university.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">8,300+</span>
+                                <span class="metric-label">Reviews Curated</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5</span>
+                                <span class="metric-label">Sensory Dimensions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2</span>
+                                <span class="metric-label">Model Paradigms</span>
+                            </div>
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Curated <strong>8,300+ coffee reviews</strong> with multi-dimensional sensory scores; designed masked loss strategies for sparse multi-target labels</li>
+                            <li>Engineered a <strong>Multi-Task Learning framework using BERT</strong> for simultaneous prediction of Aroma, Acidity, Body, Flavor, and Aftertaste</li>
+                            <li>Conducted comparative analysis between deep learning (BERT) and statistical baselines (TF-IDF + Ridge Regression), informing <strong>practical model selection</strong> for high-dimensional sparse data</li>
+                            <li>Full ML pipeline: <strong>EDA, data preprocessing, feature engineering, model training, and ablation studies</strong></li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">BERT</span>
+                            <span class="tag">Hugging Face</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Multi-Task Learning</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">TF-IDF</span>
+                            <span class="tag">spaCy</span>
+                            <span class="tag">pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Data Lake -->
+            <div class="project-card reveal">
+                <div class="project-status-bar">
+                    <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    <span class="project-type"><i class="fas fa-database"></i> University IT Project</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-info">
+                        <h3 class="project-title">Data Lake Implementation for University Enterprise Systems</h3>
+                        <div class="project-affiliation">
+                            <span><i class="fas fa-university"></i> Mae Fah Luang University</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2024</span>
+                        </div>
+                        <p class="project-description">Designed and implemented a centralized Data Lake system to integrate heterogeneous university data sources, establishing automated ETL pipelines and evaluating multiple data orchestration frameworks for enterprise-scale processing.</p>
+                        <ul class="project-highlights">
+                            <li>Established a centralized <strong>Data Lake architecture</strong> integrating data from <strong>3 enterprise systems</strong>: MFU-ERP (SAP), MFU-REG (Oracle), and departmental Excel sources</li>
+                            <li>Built automated <strong>ETL pipelines using Apache Airflow</strong> for data extraction, transformation, and loading into SQL Server</li>
+                            <li>Conducted <strong>comparative evaluation</strong> of Apache Airflow vs. KNIME vs. SSIS for data processing orchestration, providing evidence-based tool selection</li>
+                            <li>Delivered end-to-end architecture: Data Sources &rarr; Data Pipeline (Airflow) &rarr; SQL Server Data Lake &rarr; BI/Applications</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Apache Airflow</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">ETL/ELT</span>
+                            <span class="tag">Data Lake</span>
+                            <span class="tag">SAP</span>
+                            <span class="tag">Oracle</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="https://cits.mfu.ac.th/about-cits/department-cits/%E0%B8%9D%E0%B9%88%E0%B8%B2%E0%B8%A2-digital-service.html" target="_blank" rel="noopener noreferrer" class="verification-badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified: Listed as Data Engineer on <strong>MFU Official Page</strong></span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="skills-grid reveal">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Python</span>
+                        <span class="skill-tag primary">SQL</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>ML / DL Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">PyTorch</span>
+                        <span class="skill-tag primary">scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag primary">Hugging Face Transformers</span>
+                        <span class="skill-tag">timm</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data &amp; CV Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">pandas</span>
+                        <span class="skill-tag primary">NumPy</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Fiji/ImageJ</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">seaborn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MSSQL</span>
+                        <span class="skill-tag">ETL/ELT Pipelines</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux/Ubuntu (WSL2)</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-atom"></i>
+                        <h3>Domain Knowledge</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Electrochemical Impedance Spectroscopy</span>
+                        <span class="skill-tag">Equivalent Circuit Modeling</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-language"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Chinese (Native)</span>
+                        <span class="skill-tag primary">English (Fluent)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get in Touch</h2>
+            <p class="section-subtitle reveal">Open to opportunities in machine learning engineering, data science, and applied AI research. I welcome conversations about potential collaborations or roles.</p>
+            <div class="contact-grid reveal">
+                <a href="mailto:chuming001@e.ntu.edu.sg" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>chuming001@e.ntu.edu.sg</p>
+                </a>
+                <a href="tel:+6582670475" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>+65 8267 0475</p>
+                </a>
+                <a href="https://linkedin.com/in/linchuming" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/linchuming</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Singapore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lin Chuming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

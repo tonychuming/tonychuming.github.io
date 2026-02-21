@@ -9,97 +9,75 @@
     <meta property="og:title" content="Lin Chuming | Applied ML Researcher & Engineer">
     <meta property="og:description" content="MSc candidate at NTU Singapore bridging software engineering with applied machine learning across biomedical sensing, food science, and plant biology.">
     <meta property="og:type" content="website">
-    <meta name="theme-color" content="#060B18" id="metaThemeColor">
+    <meta name="theme-color" content="#000000">
     <title>Lin Chuming | Applied ML Researcher &amp; Engineer</title>
-    <script>
-        // Prevent flash: apply saved theme before CSS loads
-        (function(){var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches){document.documentElement.setAttribute('data-theme','light')}if(document.documentElement.getAttribute('data-theme')==='light'){document.getElementById('metaThemeColor')&&(document.getElementById('metaThemeColor').content='#F7F8FC')}})();
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
                 <span class="logo-bracket">{</span>LC<span class="logo-bracket">}</span>
             </a>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light/dark theme" aria-pressed="false">
-                    <i class="fas fa-sun theme-icon theme-icon--light"></i>
-                    <i class="fas fa-moon theme-icon theme-icon--dark"></i>
-                </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
-                    <span class="hamburger"></span>
-                </button>
-            </div>
-            <ul class="nav-menu" id="navMenu" role="list">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Research</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
-            </ul>
+            <button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navOverlay">
+                MENU
+            </button>
         </div>
     </nav>
 
+    <!-- Full-Screen Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Navigation menu" aria-modal="true">
+        <button class="nav-overlay-close" id="navOverlayClose" type="button" aria-label="Close navigation menu">CLOSE</button>
+        <ul class="nav-overlay-links" role="list">
+            <li><a href="#about" class="nav-overlay-link">/ About</a></li>
+            <li><a href="#education" class="nav-overlay-link">/ Education</a></li>
+            <li><a href="#experience" class="nav-overlay-link">/ Experience</a></li>
+            <li><a href="#projects" class="nav-overlay-link">/ Selected Work</a></li>
+            <li><a href="#skills" class="nav-overlay-link">/ Skills</a></li>
+            <li><a href="#contact" class="nav-overlay-link">/ Contact</a></li>
+        </ul>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero" id="hero">
-        <!-- tsParticles container -->
-        <div id="tsparticles" class="hero-particles"></div>
-
-        <!-- Gradient glow orbs -->
-        <div class="hero-glow-orbs">
-            <div class="glow-orb glow-orb--cyan"></div>
-            <div class="glow-orb glow-orb--violet"></div>
-        </div>
-
-        <!-- Bottom fade into next section -->
-        <div class="hero-gradient-overlay"></div>
-
         <div class="container hero-content">
-            <div class="hero-text">
-                <div class="hero-label fade-in">
-                    <span class="label-dot"></span>
-                    <span>MSc Candidate &middot; NTU Singapore</span>
-                </div>
-                <h1 class="hero-name fade-in delay-1">Lin Chuming</h1>
-                <p class="hero-title fade-in delay-2">Applied ML Researcher<br>
-                    <span class="hero-title-accent">&amp; Software Engineer</span>
-                </p>
-                <p class="hero-tagline fade-in delay-3">
-                    Bridging domain science with applied ML &mdash; from biomedical impedance signals to computer vision and NLP.
-                </p>
+            <div class="hero-label fade-in">
+                <span>MSc Candidate &middot; NTU Singapore</span>
+            </div>
+            <h1 class="hero-name">Lin Chuming</h1>
+            <p class="hero-title fade-in delay-2">Applied ML Researcher<br>
+                <span class="hero-title-accent">&amp; Software Engineer</span>
+            </p>
+            <p class="hero-tagline fade-in delay-3">
+                Bridging domain science with applied ML &mdash; from biomedical impedance signals to computer vision and NLP.
+            </p>
 
-                <!-- Animated counter metrics row -->
-                <div class="hero-metrics fade-in delay-3">
-                    <div class="hero-metric">
-                        <span class="hero-metric-value" data-count="5">0</span>
-                        <span class="hero-metric-label">Research Projects</span>
-                    </div>
-                    <div class="hero-metric">
-                        <span class="hero-metric-value" data-count="4">0</span>
-                        <span class="hero-metric-label">ML Domains</span>
-                    </div>
-                    <div class="hero-metric">
-                        <span class="hero-metric-value" data-count="3">0</span>
-                        <span class="hero-metric-label">Institutions</span>
-                    </div>
+            <div class="hero-metrics fade-in delay-3">
+                <div class="hero-metric">
+                    <span class="hero-metric-value" data-count="5">0</span>
+                    <span class="hero-metric-label">Research Projects</span>
                 </div>
+                <div class="hero-metric">
+                    <span class="hero-metric-value" data-count="4">0</span>
+                    <span class="hero-metric-label">ML Domains</span>
+                </div>
+                <div class="hero-metric">
+                    <span class="hero-metric-value" data-count="3">0</span>
+                    <span class="hero-metric-label">Institutions</span>
+                </div>
+            </div>
 
-                <div class="hero-cta fade-in delay-4">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View Research</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-                </div>
+            <div class="hero-cta fade-in delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Research</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
 
@@ -111,56 +89,18 @@
     </header>
 
     <!-- About Section -->
-    <section class="section about dot-grid-bg" id="about">
+    <section class="section about" id="about">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">01 / About</span>
-                <h2 class="section-title">Turning Scientific Problems<br>into ML Solutions</h2>
-            </div>
+            <span class="section-label reveal">/ About</span>
+            <h2 class="about-headline reveal">Bridging Scientific Problems<br>&amp; ML Solutions</h2>
 
-            <div class="about-intro reveal">
-                <img src="assets/images/profile.jpg" alt="Lin Chuming" class="about-avatar">
+            <div class="about-content reveal">
+                <div class="about-photo-wrap">
+                    <img src="assets/images/profile.jpg" alt="Lin Chuming" class="about-avatar" data-parallax>
+                </div>
                 <p class="about-lead">
                     I am a cross-disciplinary ML researcher with a systematic approach: identify the domain problem, design rigorous experiments, and build end-to-end pipelines that produce actionable results. From biomedical impedance sensing to agricultural computer vision and NLP-driven sensory analysis.
                 </p>
-            </div>
-
-            <!-- Visual Timeline -->
-            <div class="timeline reveal" role="list" aria-label="Career timeline">
-                <div class="timeline-track"></div>
-
-                <div class="timeline-node" role="listitem">
-                    <div class="timeline-dot timeline-dot--completed"></div>
-                    <div class="timeline-card glass-card">
-                        <span class="timeline-date">2021 &ndash; 2025</span>
-                        <h3 class="timeline-title">Mae Fah Luang University</h3>
-                        <p class="timeline-detail">BEng Software Engineering<br>
-                            <span class="timeline-highlight">First Class Honours &middot; GPA 3.83</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-node" role="listitem">
-                    <div class="timeline-dot timeline-dot--completed"></div>
-                    <div class="timeline-card glass-card">
-                        <span class="timeline-date">Jan &ndash; May 2025</span>
-                        <h3 class="timeline-title">NECTEC / NSTDA</h3>
-                        <p class="timeline-detail">Research Intern<br>
-                            <span class="timeline-highlight">NLP &middot; Multi-Task Learning</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-node" role="listitem">
-                    <div class="timeline-dot timeline-dot--active"></div>
-                    <div class="timeline-card glass-card">
-                        <span class="timeline-date">2025 &ndash; Present</span>
-                        <h3 class="timeline-title">NTU Singapore</h3>
-                        <p class="timeline-detail">MSc Computer Control &amp; Automation<br>
-                            <span class="timeline-highlight">Bio-EIS &middot; Computer Vision</span>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -168,45 +108,37 @@
     <!-- Education Section -->
     <section class="section education" id="education">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">02 / Education</span>
-                <h2 class="section-title">Academic Background</h2>
-            </div>
-            <div class="edu-grid reveal">
-                <div class="edu-card edu-current glass-card">
-                    <div class="edu-card-top">
-                        <div class="edu-status"><span class="badge-pulse"></span> Current</div>
-                        <span class="edu-years">2025 &ndash; Present</span>
+            <span class="section-label reveal">/ Education</span>
+            <h2 class="section-title reveal">Education Experience</h2>
+
+            <div class="edu-list reveal">
+                <div class="edu-row">
+                    <div class="edu-row-main">
+                        <h3 class="edu-institution">Nanyang Technological University</h3>
+                        <p class="edu-degree">MSc &mdash; Computer Control &amp; Automation</p>
+                        <p class="edu-location-text"><i class="fas fa-map-marker-alt"></i> Singapore</p>
                     </div>
-                    <div class="edu-logo-row">
-                        <img src="logo/Nanyang_Technological_University_coat_of_arms_vector.svg.png" alt="NTU" class="institution-logo">
+                    <div class="edu-row-side">
+                        <span class="edu-status"><span class="badge-pulse"></span> Current</span>
+                        <span class="edu-period">2025 &ndash; Present</span>
                     </div>
-                    <h3 class="edu-school">Nanyang Technological University</h3>
-                    <p class="edu-degree">MSc &mdash; Computer Control &amp; Automation</p>
-                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Singapore</p>
                 </div>
-                <div class="edu-card glass-card">
-                    <div class="edu-card-top">
-                        <div class="edu-status edu-status-done"><i class="fas fa-check"></i> Graduated</div>
-                        <span class="edu-years">2021 &ndash; 2025</span>
+
+                <div class="edu-row">
+                    <div class="edu-row-main">
+                        <h3 class="edu-institution">Mae Fah Luang University</h3>
+                        <p class="edu-degree">BEng &mdash; Software Engineering</p>
+                        <p class="edu-honors">First Class Honours &middot; <span class="accent">GPA 3.83</span> / 4.00</p>
+                        <p class="edu-location-text"><i class="fas fa-map-marker-alt"></i> Thailand</p>
+                        <a href="assets/docs/scholarship.pdf" target="_blank" rel="noopener noreferrer" class="credential-link">
+                            <i class="fas fa-award"></i>
+                            <span>MFU Partial Scholarship for Outstanding Academic Performance (AY 2023/24)</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
-                    <div class="edu-logo-row">
-                        <img src="logo/Mae-Fah-Luang-University.png" alt="MFU" class="institution-logo">
+                    <div class="edu-row-side">
+                        <span class="edu-period">2021 &ndash; 2025</span>
                     </div>
-                    <h3 class="edu-school">Mae Fah Luang University</h3>
-                    <p class="edu-degree">BEng &mdash; Software Engineering</p>
-                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Thailand</p>
-                    <div class="edu-highlights">
-                        <div class="edu-highlight">
-                            <span class="edu-gpa">3.83</span>
-                            <span class="edu-gpa-label">GPA / 4.00<br>First Class Honours</span>
-                        </div>
-                    </div>
-                    <a href="assets/docs/scholarship.pdf" target="_blank" rel="noopener noreferrer" class="credential-link">
-                        <i class="fas fa-award"></i>
-                        <span>MFU Partial Scholarship (AY 2023/24)</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -215,37 +147,25 @@
     <!-- Experience Section -->
     <section class="section experience" id="experience">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">03 / Experience</span>
-                <h2 class="section-title">Professional Background</h2>
-            </div>
+            <span class="section-label reveal">/ Experience</span>
+            <h2 class="section-title reveal">Professional Background</h2>
 
-            <div class="exp-card-compact glass-card reveal">
-                <div class="exp-compact-accent"></div>
-                <div class="exp-compact-content">
-                    <div class="exp-compact-main">
-                        <div class="exp-compact-info">
-                            <h3>Research Assistant Intern</h3>
-                            <div class="exp-org-row">
-                                <img src="logo/nectec_logo.png" alt="NECTEC" class="institution-logo">
-                                <p class="exp-compact-org">NECTEC / NSTDA <span class="exp-divider">&mdash;</span> National Research Agency, Thailand</p>
-                            </div>
-                        </div>
-                        <div class="exp-compact-period">
-                            <span class="exp-date">Jan &ndash; May 2025</span>
-                        </div>
+            <div class="exp-row reveal">
+                <div class="exp-row-main">
+                    <h3 class="exp-role">Research Assistant Intern</h3>
+                    <p class="exp-org">NECTEC / NSTDA <span class="exp-divider">&mdash;</span> National Research Agency, Thailand</p>
+                    <div class="proj-tags">
+                        <span class="tag">BERT</span>
+                        <span class="tag">Multi-Task Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">PyTorch</span>
                     </div>
-                    <div class="exp-compact-footer">
-                        <div class="exp-compact-tags">
-                            <span class="tag">BERT</span>
-                            <span class="tag">Multi-Task Learning</span>
-                            <span class="tag">NLP</span>
-                            <span class="tag">PyTorch</span>
-                        </div>
-                        <a href="#nectec-project" class="exp-project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+                </div>
+                <div class="exp-row-side">
+                    <span class="exp-period">Jan &ndash; May 2025</span>
+                    <a href="#nectec-project" class="exp-project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -254,98 +174,70 @@
     <!-- Research & Projects Section -->
     <section class="section projects" id="projects">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">04 / Research &amp; Projects</span>
-                <h2 class="section-title">Selected Work</h2>
-                <p class="section-desc">A portfolio spanning biomedical sensing, computer vision, NLP, and data engineering.</p>
-            </div>
+            <span class="section-label reveal">/ Selected Work</span>
+            <h2 class="section-title reveal">Research &amp; Projects</h2>
+            <p class="section-desc reveal">A portfolio spanning biomedical sensing, computer vision, NLP, and data engineering.</p>
 
-            <!-- Featured: MSc Dissertation (Bio-EIS) — Aug 2025+ -->
-            <div class="proj-card proj-card--tier1 glass-card reveal">
-                <div class="proj-card-inner">
-                    <div class="proj-header">
-                        <div class="proj-badges">
-                            <span class="proj-badge proj-badge-active"><span class="badge-pulse"></span> Active Research</span>
-                            <span class="proj-badge proj-badge-type">MSc Dissertation</span>
-                        </div>
-                        <span class="proj-institution">NTU Singapore</span>
+            <!-- Featured: MSc Dissertation (Bio-EIS) -->
+            <div class="proj-featured reveal">
+                <div class="proj-header">
+                    <div class="proj-badges">
+                        <span class="proj-badge proj-badge-active"><span class="badge-pulse"></span> Active Research</span>
+                        <span class="proj-badge proj-badge-type">MSc Dissertation</span>
                     </div>
-                    <h3 class="proj-title">ML/AI for Bio-EIS Signal Analysis for Cultured Meat Monitoring</h3>
-                    <p class="proj-desc">Physics-informed ML pipeline for bioelectrical impedance classification and concentration estimation on a microfluidic biochip platform.</p>
-                    <div class="proj-metrics-row">
-                        <div class="proj-metric">
-                            <span class="proj-metric-val">6</span>
-                            <span class="proj-metric-lbl">Biochips</span>
-                        </div>
-                        <div class="proj-metric">
-                            <span class="proj-metric-val">3</span>
-                            <span class="proj-metric-lbl">ML Tasks</span>
-                        </div>
-                        <div class="proj-metric">
-                            <span class="proj-metric-val">18</span>
-                            <span class="proj-metric-lbl">Measurements</span>
-                        </div>
-                    </div>
-                    <div class="proj-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">scikit-learn</span>
-                        <span class="tag">Signal Processing</span>
-                        <span class="tag">Physics-Informed ML</span>
-                    </div>
-                    <div class="proj-meta">
-                        <span><i class="fas fa-user-tie"></i> Assoc. Prof. Poenar Daniel Puiu</span>
-                        <span><i class="fas fa-calendar"></i> Aug 2025 &ndash; Present</span>
-                    </div>
+                    <span class="proj-institution">NTU Singapore</span>
+                </div>
+                <h3 class="proj-title-lg">ML/AI for Bio-EIS Signal Analysis for Cultured Meat Monitoring</h3>
+                <p class="proj-desc">Designing a structured EIS data acquisition protocol and physics-informed ML pipeline targeting bead-type classification, concentration estimation, and mixture composition inference on a microfluidic biochip platform, with planned integration of Maxwell-Hanai mixture theory.</p>
+                <div class="proj-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">Signal Processing</span>
+                    <span class="tag">Physics-Informed ML</span>
+                    <span class="tag">EIS</span>
+                    <span class="tag">Equivalent Circuit Modeling</span>
+                </div>
+                <div class="proj-meta">
+                    <span><i class="fas fa-user-tie"></i> Assoc. Prof. Poenar Daniel Puiu</span>
+                    <span><i class="fas fa-calendar"></i> Aug 2025 &ndash; Present</span>
                 </div>
             </div>
 
-            <!-- 2025 Projects -->
-            <div class="proj-grid-standard">
+            <!-- Project Index List -->
+            <div class="proj-index">
 
-                <!-- Mimosa pudica — Aug 2025+ -->
-                <div class="proj-card proj-card--tier2 glass-card reveal">
-                    <div class="proj-card-inner">
-                        <div class="proj-header">
-                            <div class="proj-badges">
-                                <span class="proj-badge proj-badge-active"><span class="badge-pulse"></span> Active</span>
-                            </div>
+                <!-- Mimosa pudica -->
+                <div class="proj-index-item reveal">
+                    <div class="proj-index-main">
+                        <div class="proj-index-header">
+                            <span class="proj-badge proj-badge-active"><span class="badge-pulse"></span> Active</span>
                             <span class="proj-institution">NTU Singapore</span>
                         </div>
-                        <h3 class="proj-title">Reaction Dynamics in <em>Mimosa pudica</em></h3>
-                        <p class="proj-desc">Automated CV pipeline quantifying plant kinematic responses via high-speed imaging under 6 environmental variables.</p>
+                        <h3 class="proj-index-title">Investigating Reaction Dynamics in <em>Mimosa pudica</em></h3>
+                        <p class="proj-index-desc">Standardized high-precision experimental protocol with automated CV pipeline using Fiji macros and Python (OpenCV) to extract angular velocities and physiological fatigue metrics from 60 fps imaging under 6 environmental variables.</p>
                         <div class="proj-tags">
                             <span class="tag">Python</span>
                             <span class="tag">OpenCV</span>
                             <span class="tag">Fiji/ImageJ</span>
                             <span class="tag">Computer Vision</span>
                         </div>
-                        <div class="proj-meta">
-                            <span><i class="fas fa-calendar"></i> Aug 2025 &ndash; Present</span>
-                        </div>
                     </div>
+                    <span class="proj-index-date">Aug 2025 &ndash; Present</span>
                 </div>
 
-                <!-- NECTEC Coffee Sensory — Jan–May 2025 -->
-                <div class="proj-card proj-card--tier2 glass-card reveal" id="nectec-project">
-                    <div class="proj-card-inner">
-                        <div class="proj-header">
-                            <div class="proj-badges">
-                                <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
-                                <span class="proj-badge proj-badge-type">Internship</span>
-                            </div>
+                <!-- NECTEC Coffee Sensory -->
+                <div class="proj-index-item reveal" id="nectec-project">
+                    <div class="proj-index-main">
+                        <div class="proj-index-header">
+                            <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
+                            <span class="proj-badge proj-badge-type">Internship</span>
                             <span class="proj-institution">NECTEC, NSTDA</span>
                         </div>
-                        <h3 class="proj-title">Multi-Task Learning for Coffee Sensory Prediction</h3>
-                        <p class="proj-desc">Multi-task deep learning predicting five sensory dimensions from review text, with masked loss for sparse labels.</p>
-                        <div class="proj-metrics-row">
-                            <div class="proj-metric">
-                                <span class="proj-metric-val">8,300+</span>
-                                <span class="proj-metric-lbl">Reviews</span>
-                            </div>
-                            <div class="proj-metric">
-                                <span class="proj-metric-val">5-dim</span>
-                                <span class="proj-metric-lbl">Prediction</span>
-                            </div>
+                        <h3 class="proj-index-title">Multi-Task Learning for Coffee Sensory Score Prediction from Reviews</h3>
+                        <p class="proj-index-desc">BERT-based Multi-Task Learning framework predicting 5 sensory dimensions (Aroma, Acidity, Body, Flavor, Aftertaste) from review text, with masked loss for sparse multi-target labels and rigorous comparison against TF-IDF + Ridge Regression baselines.</p>
+                        <div class="proj-index-metrics">
+                            <span>8,300+ Reviews</span>
+                            <span>5-dim Prediction</span>
                         </div>
                         <div class="proj-tags">
                             <span class="tag">BERT</span>
@@ -353,64 +245,45 @@
                             <span class="tag">Multi-Task Learning</span>
                             <span class="tag">NLP</span>
                         </div>
-                        <div class="proj-meta">
-                            <span><i class="fas fa-calendar"></i> Jan &ndash; May 2025</span>
-                        </div>
                     </div>
+                    <span class="proj-index-date">Jan &ndash; May 2025</span>
                 </div>
 
-            </div>
-
-            <!-- Earlier Projects -->
-            <div class="proj-grid-standard">
-
-                <!-- Data Lake — 2024 -->
-                <div class="proj-card proj-card--tier2 glass-card reveal">
-                    <div class="proj-card-inner">
-                        <div class="proj-header">
-                            <div class="proj-badges">
-                                <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
-                            </div>
+                <!-- Data Lake -->
+                <div class="proj-index-item reveal">
+                    <div class="proj-index-main">
+                        <div class="proj-index-header">
+                            <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
                             <span class="proj-institution">Mae Fah Luang University</span>
                         </div>
-                        <h3 class="proj-title">Data Lake for University Enterprise Systems</h3>
-                        <p class="proj-desc">Centralized Data Lake with automated ETL pipelines integrating heterogeneous university data sources.</p>
+                        <h3 class="proj-index-title">Data Lake for University Enterprise Systems</h3>
+                        <p class="proj-index-desc">Centralized Data Lake consolidating 9+ institutional data sources across structured, semi-structured, and unstructured formats using Apache Airflow ETL pipelines for unified data management.</p>
                         <div class="proj-tags">
                             <span class="tag">Apache Airflow</span>
                             <span class="tag">SQL Server</span>
                             <span class="tag">ETL/ELT</span>
                             <span class="tag">Python</span>
                         </div>
-                        <div class="proj-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <a href="https://cits.mfu.ac.th/about-cits/department-cits/%E0%B8%9D%E0%B9%88%E0%B8%B2%E0%B8%A2-digital-service.html" target="_blank" rel="noopener noreferrer" class="verify-link">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Verified on MFU Official Page</span>
-                            </a>
-                        </div>
+                        <a href="https://cits.mfu.ac.th/about-cits/department-cits/%E0%B8%9D%E0%B9%88%E0%B8%B2%E0%B8%A2-digital-service.html" target="_blank" rel="noopener noreferrer" class="verify-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified on MFU Official Page</span>
+                        </a>
                     </div>
+                    <span class="proj-index-date">2024</span>
                 </div>
 
-                <!-- Coffee Bean Classification — Sep 2023–Nov 2024 -->
-                <div class="proj-card proj-card--tier2 glass-card reveal">
-                    <div class="proj-card-inner">
-                        <div class="proj-header">
-                            <div class="proj-badges">
-                                <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
-                            </div>
+                <!-- Coffee Bean Classification -->
+                <div class="proj-index-item reveal">
+                    <div class="proj-index-main">
+                        <div class="proj-index-header">
+                            <span class="proj-badge proj-badge-done"><i class="fas fa-check"></i> Completed</span>
                             <span class="proj-institution">MFU &mdash; IATE Lab</span>
                         </div>
-                        <h3 class="proj-title">Coffee Bean Quality Classification</h3>
-                        <p class="proj-desc">Compared hand-crafted features vs. deep learning for automated coffee bean defect detection across 9 class conditions.</p>
-                        <div class="proj-metrics-row">
-                            <div class="proj-metric">
-                                <span class="proj-metric-val">5,600</span>
-                                <span class="proj-metric-lbl">Images</span>
-                            </div>
-                            <div class="proj-metric">
-                                <span class="proj-metric-val">97.13%</span>
-                                <span class="proj-metric-lbl">Top Accuracy</span>
-                            </div>
+                        <h3 class="proj-index-title">Comparative Study on Coffee Bean Quality Classification</h3>
+                        <p class="proj-index-desc">Benchmarked hand-crafted features (Random Forest, SVM, KNN achieving 95.97%) against CNN architectures under controlled lab conditions across 3 processing methods × 3 roast levels, with ResNet50d achieving top accuracy of 97.13%.</p>
+                        <div class="proj-index-metrics">
+                            <span>5,600 Images</span>
+                            <span>97.13% Top Accuracy</span>
                         </div>
                         <div class="proj-tags">
                             <span class="tag">PyTorch</span>
@@ -418,10 +291,8 @@
                             <span class="tag">OpenCV</span>
                             <span class="tag">Computer Vision</span>
                         </div>
-                        <div class="proj-meta">
-                            <span><i class="fas fa-calendar"></i> Sep 2023 &ndash; Nov 2024</span>
-                        </div>
                     </div>
+                    <span class="proj-index-date">Sep 2023 &ndash; Nov 2024</span>
                 </div>
 
             </div>
@@ -431,15 +302,12 @@
     <!-- Skills Section -->
     <section class="section skills" id="skills">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">05 / Skills</span>
-                <h2 class="section-title">Technical Toolkit</h2>
-            </div>
+            <span class="section-label reveal">/ Skills</span>
+            <h2 class="section-title reveal">Technical Toolkit</h2>
 
-            <div class="skill-clusters reveal">
-
-                <div class="skill-cluster glass-card">
-                    <h3 class="skill-cluster-title"><i class="fas fa-brain"></i> ML / Deep Learning</h3>
+            <div class="skill-groups reveal">
+                <div class="skill-group">
+                    <h3 class="skill-group-label">ML / Deep Learning</h3>
                     <div class="skill-tags">
                         <span class="skill-tag skill-tag--core">PyTorch</span>
                         <span class="skill-tag skill-tag--core">scikit-learn</span>
@@ -450,8 +318,8 @@
                     </div>
                 </div>
 
-                <div class="skill-cluster glass-card">
-                    <h3 class="skill-cluster-title"><i class="fas fa-eye"></i> Computer Vision</h3>
+                <div class="skill-group">
+                    <h3 class="skill-group-label">Computer Vision</h3>
                     <div class="skill-tags">
                         <span class="skill-tag skill-tag--core">OpenCV</span>
                         <span class="skill-tag">Image Classification</span>
@@ -461,8 +329,8 @@
                     </div>
                 </div>
 
-                <div class="skill-cluster glass-card">
-                    <h3 class="skill-cluster-title"><i class="fas fa-language"></i> Data &amp; NLP</h3>
+                <div class="skill-group">
+                    <h3 class="skill-group-label">Data &amp; NLP</h3>
                     <div class="skill-tags">
                         <span class="skill-tag skill-tag--core">pandas / NumPy</span>
                         <span class="skill-tag skill-tag--core">BERT / Transformers</span>
@@ -472,8 +340,8 @@
                     </div>
                 </div>
 
-                <div class="skill-cluster glass-card">
-                    <h3 class="skill-cluster-title"><i class="fas fa-database"></i> Engineering</h3>
+                <div class="skill-group">
+                    <h3 class="skill-group-label">Engineering</h3>
                     <div class="skill-tags">
                         <span class="skill-tag skill-tag--core">Python</span>
                         <span class="skill-tag skill-tag--core">SQL</span>
@@ -485,14 +353,10 @@
                     </div>
                 </div>
 
-                <div class="skill-cluster glass-card">
-                    <h3 class="skill-cluster-title"><i class="fas fa-globe"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag skill-tag--core">Chinese <small>(Native)</small></span>
-                        <span class="skill-tag skill-tag--core">English <small>(Fluent)</small></span>
-                    </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-label">Languages</h3>
+                    <p class="skill-languages">Chinese <span class="text-muted">(Native)</span> &middot; English <span class="text-muted">(Fluent)</span></p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -500,32 +364,21 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">06 / Contact</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-desc">
-                    Open to opportunities in ML engineering, data science, and applied AI research.
-                </p>
-            </div>
+            <span class="section-label reveal">/ Contact</span>
+            <h2 class="contact-headline reveal">Let's Talk</h2>
+            <p class="contact-sub reveal">
+                Open to opportunities in ML engineering, data science, and applied AI research.
+            </p>
 
-            <!-- Primary email CTA -->
-            <div class="contact-cta reveal">
-                <a href="mailto:chuming001@e.ntu.edu.sg" class="btn btn-primary btn-lg">
-                    <i class="fas fa-envelope"></i>
-                    <span>chuming001@e.ntu.edu.sg</span>
-                </a>
-            </div>
+            <a href="mailto:chuming001@e.ntu.edu.sg" class="contact-email reveal">chuming001@e.ntu.edu.sg</a>
 
-            <!-- Secondary links -->
             <div class="contact-links reveal">
-                <a href="https://linkedin.com/in/linchuming" target="_blank" rel="noopener noreferrer" class="contact-link-item glass-card">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span>LinkedIn</span>
+                <a href="https://linkedin.com/in/linchuming" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
                 </a>
-                <div class="contact-link-item glass-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Singapore</span>
-                </div>
+                <span class="contact-link">
+                    <i class="fas fa-map-marker-alt"></i> Singapore
+                </span>
             </div>
         </div>
     </section>
@@ -533,15 +386,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <span class="footer-logo"><span class="logo-bracket">{</span>LC<span class="logo-bracket">}</span></span>
-                <p>&copy; 2026 Lin Chuming</p>
-            </div>
+            <p>&copy; 2026 Lin Chuming</p>
         </div>
     </footer>
 
-    <!-- tsParticles (slim bundle) -->
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
